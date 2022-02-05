@@ -154,6 +154,7 @@
                 font-weight: 300
                 font-size: 14px
                 color: #FF0000
+
 .consultation
     min-height: 680px
     padding: 114px 0 108px 0
@@ -170,4 +171,43 @@
         font-size: 20px
         line-height: 30px
         color: #FFFFFF
-    
+
+.carousel
+    padding: 81px 0 
+    &__slider
+        width: 100%
+        margin: 0 auto
+        img
+            display: block
+            width: 90%
+            margin: 0 auto
+    .slick-prev, .slick-next
+        position: absolute
+        height: 100%
+        transform: translateY(-50%)
+        top: 50%
+        background: none
+        border: none
+        z-index: 2
+    .slick-next
+        right: 0
+    .slick-dots
+        display: flex
+        list-style-type: none
+        justify-content: center
+        padding: 0
+        margin: 0
+        li
+            width: 10px
+            height: 10px
+            margin: 10px 5px 0 5px
+            border: solid 1px #C70101
+            border-radius: 100%
+            background: #fff
+            button
+                display: none
+        .slick-active
+            background-color: #C70101
+
+        
+        
