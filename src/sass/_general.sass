@@ -6,6 +6,8 @@
     text-align: center
     text-transform: uppercase
     color: #FFFFFF
+    &:hover
+        background-color: #bb0303
     &_call
         margin-top: 3px
         width: 153px
@@ -20,6 +22,11 @@
         width: 300px
         height: 58px
         font-size: 16px
+    &_buy
+        width: 131px
+        height: 40px
+        font-size: 14px
+
 .form-feed
     margin-top: 36px
     display: flex
@@ -208,6 +215,157 @@
                 display: none
         .slick-active
             background-color: #C70101
+.catalog
+    padding: 23px 0 40px 0
+    &__header
+        font-weight: normal
+        font-size: 30px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        color: #0D0D0D
+    &__tabs
+        margin: 57px 0
+        padding: 0
+        list-style-type: none
+        display: flex
+        justify-content: center
+        align-items: center
+    &__tab
+        width: 220px
+        height: 50px
+        margin: 0 5px
+        border: 2px solid #D0D0D0
+        transform: skewX(-25deg)
+        line-height: 48px
+        font-weight: normal
+        font-size: 18px
+        text-align: center
+        text-transform: uppercase
+        color: #6B6B6B
+        cursor: pointer
+        transition: 0.3s all
+        div
+            transform: skewX(25deg)
+        &_active
+            background-color: #C70101
+            color: #FFFFFF
+            border: none
+        &:hover
+            font-size: 19px
+            box-shadow: 3px 3px 20px #C70101
+    &__content
+        display: none
+        flex-wrap: wrap
+        justify-content: space-between
+        &_active
+            display: flex
+    &-item
+        width: 300px
+        min-height: 440px
+        border: 2px solid #E8E8E8
+        padding: 19px
+        overflow: hidden
+        margin-bottom: 20px
+        &__img
+           max-width: 100%
+           height: 200px
+           display: block
+           margin: 0 auto
+        &__title
+            margin-top: 20px
+            font-weight: bold
+            font-size: 16px
+            text-align: center
+            color: #0D0D0D
+        &__desc
+            margin-top: 25px
+            font-weight: 300
+            font-size: 14px
+            text-align: center
+            color: #0D0D0D
+        &__link
+            margin-top: 18px
+            display: block
+            font-weight: 500
+            font-size: 14px
+            text-align: center
+            text-transform: uppercase
+            text-decoration-line: underline
+            color: #C70101
+            &:hover
+                color: #bb0303
+        hr
+            margin: 20px 0
+        &__footer
+            display: flex
+            justify-content: space-between
+        &__prices
+            margin-top: 5px
+        &__old-price
+            font-weight: 300
+            font-size: 14px
+            line-height: 14px
+            text-decoration-line: line-through
+            color: #555555
+        &__current-price
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 20px
+            color: #050505
+        &__wrapper
+            display: flex
+            width: calc( 200% + 40px )
+        &__content
+            width: 50%
+            margin-right: 0px
+            transform: translateX(-100%)
+            &_active
+                transform: translateX(0%)
+                margin-right: 20px
+        &__list
+            position: relative
+            width: 50%
+            margin-left: 20px
+            transform: translateX(0%)
+            padding-right: 20px
+            transition: 0.6s all
+            padding-left: 0
+            margin-bottom: 0
+            list-style-type: none
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0px
+            li
+                position: relative
+                font-weight: 300
+                font-size: 14px
+                line-height: 21px
+                color: #555555
+                margin-bottom: 14px
+                padding-left: 16px
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: 10px
+                    left: 0
+                    width: 5px
+                    height: 5px
+                    background-color: #C70101
+        &__back
+            position: absolute
+            font-weight: 500
+            font-size: 14px
+            line-height: 14px
+            text-decoration-line: underline
+            text-transform: uppercase
+            color: #C70101
+            bottom: 0
+            left: 50%
+            transform: translateX(calc( -50% - 16px ))
+            &:hover
+                color: #bb0303
 
-        
         
