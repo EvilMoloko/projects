@@ -1,7 +1,11 @@
 @media (max-width: 1200px)
 	
 @media (max-width: 991px)
- 
+	.reviews
+		&-item
+			justify-content: space-around
+			&__text-content
+				max-width: 560px
 @media (max-width: 767px)
 	.header
 		&__official
@@ -15,6 +19,24 @@
 			font-size: 38px
 		&__subheader
 			font-size: 22px
+	.catalog
+		&__tabs
+			margin-top: 47px
+		&__tab
+			margin-top: 10px
+			font-size: 16px
+			&:hover
+				font-size: 17px
+		&__content
+			justify-content: center
+		&-item
+			margin: 0 5px
+			margin-bottom: 10px
+	.reviews
+		&-item
+			&__text-content
+				margin-top: 15px
+				text-align: center
 @media (max-width: 575px)
 	.header
 		justify-content: space-around
@@ -64,7 +86,27 @@
 			width: 280px
 	.carousel
 		padding: 40px 0
-
+	.catalog
+		&__header
+			font-size: 26px
+		&__tabs
+			margin: 20px 0 30px 0
+		&__tab
+			margin-top: 5px
+			font-size: 14px
+			transform: skewX(0deg)
+			div
+				transform: skewX(0deg)
+			&:hover
+				font-size: 15px
+	.reviews
+		&__header
+			font-size: 26px
+		&-item
+			&__img
+				width: 149px
+				height: 149px
+		
 
 		
 

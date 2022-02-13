@@ -229,6 +229,7 @@
         padding: 0
         list-style-type: none
         display: flex
+        flex-wrap: wrap
         justify-content: center
         align-items: center
     &__tab
@@ -257,7 +258,7 @@
     &__content
         display: none
         flex-wrap: wrap
-        justify-content: space-between
+        justify-content: space-around
         &_active
             display: flex
     &-item
@@ -321,6 +322,7 @@
             width: 50%
             margin-right: 0px
             transform: translateX(-100%)
+            transition: 0.6s all
             &_active
                 transform: translateX(0%)
                 margin-right: 20px
@@ -367,5 +369,40 @@
             transform: translateX(calc( -50% - 16px ))
             &:hover
                 color: #bb0303
-
-        
+.reviews
+    padding: 40px 0 48px 0
+    &__header
+        font-weight: bold
+        font-size: 30px
+        line-height: 30px
+        text-align: center
+        text-transform: uppercase
+        color: #0D0D0D
+    &__wrapper
+        margin-top: 66px
+    &-item
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 60px
+        &__img
+            width: 169px
+            height: 169px
+        &__text-content
+            max-width: 676px
+            margin: 0 10px
+        &__name
+            font-weight: bold
+            font-size: 18px
+            color: #0D0D0D
+        &__under-name
+            margin-top: 0px
+            font-weight: 500
+            font-size: 14px
+            color: #646464
+        &__desc
+            margin-top: 17px
+            font-weight: 300
+            font-size: 16px
+            line-height: 24px
+            color: #0D0D0D
